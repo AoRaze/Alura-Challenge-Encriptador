@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <title>Encriptador - Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="encriptador.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="logo">
+       <p>
+        <a href="https://www.aluracursos.com" target="_blank">
+        <img  class="Alura-lg" src="Source-challenge/logo-vector.svg" alt="Alura LATAM">
+        </a></p>
+    </div>
+</header>
+
+<body>
+
+    <main>
+        <div class="Entrada">
+            <div class="Insertar">
+                <textarea class="Cuadro-Insertar" name="texto1" id="Cuadro-Insertar" rows="5" cols="50" placeholder="Inserte Texto aquí"></textarea>
+            </div>
+            <div class="aviso">
+                 
+                  <img class="info" src="Source-challenge/info.svg" alt="aviso-icono">
+                <p class="infotext">Solo letras minúsculas y sin acentos.</p>
+            </div> 
+            <div class="Botones">
+                <button class="btn-encriptar" type="button" onclick="encriptador()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptador()">Desencriptar</button>
+            </div>
+    
+        </div>
+    
+        <div class ="rectangulo", id ="rectangulo">
+            <img class="muñeco" id="muñeco" src="Source-challenge/Muñeco.svg" alt="Muñequiño">
+            <div>
+                
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 class="titulo-mensaje" id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                    <p class="Resultado" id="sub">
+                      Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                    
+            </div>
+
+            <div class="Respuesta">
+            <textarea readonly class="texto" name="texto1" id="Resultado" 
+            rows="5" cols="50" placeholder="Pruebiña Pruebiña"></textarea>
+            <button id="btn-copy" class="btn-copy" type="button" onclick="copy()">Copiar</button>
+
+             </div>
+        </div>
+        
+    </main>
+    
+
+</body>
+
+<footer>
+    <div class="pie">
+        <a href="https://www.linkedin.com/in/guillermo-hernández-817259270/" target="_blank">
+            <img class="foxlogo" id="foxraze" src="Source-challenge/foxlogo.png">
+            </a></p>
+        
+        <p class="copy-alu">Hecho como Challenge para Alura LATAM</p>
+         <p class="copy-rz">AoRaze - 2023</p>
+         <p class="boo"> </p>
+
+    </div>
+    
+</footer>
+
+
+</html>
